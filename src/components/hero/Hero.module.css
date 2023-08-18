@@ -1,0 +1,105 @@
+.hero {
+    background: url(https://cdn.pixabay.com/photo/2016/11/22/23/44/porsche-1851246_1280.jpg) no-repeat center/cover ;
+    width: 100%;
+    height: 500px;
+    display: flex;
+}
+form {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 700px;
+    width: 100%;
+    margin: auto;
+    margin-top: 10%;
+    padding: 6px 15px;
+    background-color: rgba(247, 247, 247, 0.9);
+    box-shadow: rgba(0, 0, 0, 0.9) 0px 8px 24px;
+    border-radius: 35px;
+    padding: 1rem;
+}
+form label {
+    font-size: .8rem;
+    padding-bottom: 2px;
+}
+form input {
+    background-color: transparent;
+    border: none;
+    font-family: "Poppins", sans-serif;
+}
+form input:focus {
+    outline: none;
+}
+.texte, .from, .until {
+    display: flex;
+    flex-direction: column;
+    font-weight: 800;
+}
+.from, .until {
+    border-left: 1px solid #333;
+    padding-left: 7px;
+}
+.input_text {
+    width: 300px;
+    font-size: 1rem;
+}
+.search_btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search_btn button {
+    display: none;
+}
+@media screen and (max-width: 720px) {
+    form {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        margin: auto 1rem;
+        
+    }
+    .texte, .from, .until {
+        width: 100%;
+        padding: .2rem;
+        
+    }
+    .from, .until {
+        border: none;
+        margin-top: 5px;
+    }
+    .border {
+        border-top: 1px solid #333;
+    }
+    form label {
+        padding: .4rem 0;
+    }
+    .search_btn {
+        width: 100%;
+        border-top: 1px solid #333;
+    }
+    .search_btn svg {
+        display: none;
+    }
+    .search_btn button {
+        display: block;
+        background-color: #593cfb;
+        color: white;
+        font-family: 'Poppins', sans-serif;
+        outline: none;
+        border: none;
+        padding: 5px;
+        width: 60%;
+        border-radius: 25px;
+        margin-top: 1rem;
+        font-size: 16px;
+        cursor: pointer;
+    }
+    .search_btn button:hover {
+        background-color: #4733b7;
+        transition: background-color 1s;
+        padding: .4rem;
+        width: 100%;
+    }
+}
+
